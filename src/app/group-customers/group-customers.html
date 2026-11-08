@@ -1,0 +1,28 @@
+<p>group-customers works!</p>
+
+
+<div *ngFor="let group of customerGroups" style="margin-bottom: 30px;">
+  <h3 style="background-color: #3f51b5; color: white; padding: 10px; margin-bottom: 0;">
+    Loại khách hàng: {{ group.CustomterTypeName }} (ID: {{ group.CustomerTypeId }})
+  </h3>
+
+  
+  <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+    <tr style="background-color: #f2f2f2;">
+      <th>Mã KH</th>
+      <th>Họ tên</th>
+      <th>Email</th>
+      <th>Tuổi</th>
+      <th>Hình đại diện</th>
+    </tr>
+    <tr *ngFor="let cus of group.Customers">
+      <td>{{ cus.Id }}</td>
+      <td>{{ cus.Name }}</td>
+      <td>{{ cus.Email }}</td>
+      <td>{{ cus.Age }}</td>
+      <td>
+        <img [src]="cus.Image" width="60" height="60" />
+      </td>
+    </tr>
+  </table>
+</div>

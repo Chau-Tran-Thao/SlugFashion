@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Martin",
+    "price": 10.99,
+    "image_link": "/assets/h2.png"
+  },
+  {
+    "id": 2,
+    "name": "Juhoon",
+    "price": 19.99,
+    "image_link": "/assets/h3.png"
+  },
+  {
+    "id": 3,
+    "name": "James",
+    "price": 5.99,
+    "image_link": "/assets/h1.png"
+  }
+]
